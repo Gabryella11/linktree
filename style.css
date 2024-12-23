@@ -2,77 +2,76 @@
 
 body {
     background-color: rgb(228, 253, 253);
-    font-family:"Roboto", serif ;
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
 img {
-    position: absolute;
-    left: 42%;
-    top: 5%;
-    border-radius: 950%;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
 }
+
 figcaption {
-    position: absolute;
-    left: 44%;
-    top: 35%;
     font-size: 48px;
+    margin-top: 10px;
+    text-align: center;
 }
-.instagram {
-        border-radius: 15px;
-    position: absolute;
-    left: 17%;
-    top: 50%;
-    font-size: 25px;
-    display: block;
-    background-color: rgb(62, 0, 133);
-    color: aliceblue;
-    text-decoration: none;
-    padding-left: 550px;
-    padding-right: 550px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
 }
-.tiktok {
+
+.links a {
     border-radius: 15px;
-    position: absolute;
-    left: 17%;
-    top: 60%;
     font-size: 25px;
-    display: block;
     background-color: rgb(62, 0, 133);
     color: aliceblue;
     text-decoration: none;
-    padding-left: 570px;
-    padding-right: 570px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    text-align: center;
+    padding: 18px 350px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px;
+    transition: background-color 0.3s ease;
 }
-.discord {
-    border-radius: 15px;
-    position: absolute;
-    left: 17%;
-    top: 70%;
-    font-size: 25px;
-    display: block;
-    background-color: rgb(62, 0, 133);
-    color: aliceblue;
-    text-decoration: none;
-    padding-left: 580px;
-    padding-right: 550px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+
+.links a:hover {
+    background-color: rgb(91, 0, 195);
 }
-.spotify {
-    border-radius: 15px;
-    position: absolute;
-    left: 17%;
-    top: 80%;
-    font-size: 25px;
-    display: block;
-    background-color: rgb(62, 0, 133);
-    color: aliceblue;
-    text-decoration: none;
-    padding-left: 590px;
-    padding-right: 550px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+
+/* Responsividade */
+@media (max-width: 768px) {
+    figcaption {
+        font-size: 20px;
+    }
+
+    .links a {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 120px;
+    }
+
+    figcaption {
+        font-size: 18px;
+    }
+
+    .links a {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
